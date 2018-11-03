@@ -17,7 +17,7 @@
 
   <body>
 
-    <nav class="navbar navbar-custom navbar-fixed-top">
+    <nav class="navbar navbar-fixed-top" id="navi">
       <div class="col-md-2"></div>
       <div class="container-fluid">
         <div class="navbar-header">
@@ -26,36 +26,36 @@
         <div class="col-md-2"></div>
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Теория</b><span class="caret"></span>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Теория</b><span class="caret" style="color:white"></span>
               </a>
               <ul class="dropdown-menu">
-                <li><strong>МАТЕМАТИКА И СТАТИСТИКА</strong></li>
-                <li><a href="#">Линейная Алгебра</a></li>
-                <li><a href="#">Теория Вероятностей</a></li>
-                <li><a href="#">Статистика</a></li>
-                <li><a href="#">Алгебра и Анализ</a></li>
+                <li class="text-muted"><h4>Математика и Статистика<h4></li>
+                <li class="dropdown-item"><a href="#">Линейная Алгебра</a></li>
+                <li class="dropdown-item"><a href="#">Теория Вероятностей</a></li>
+                <li class="dropdown-item"><a href="#">Статистика</a></li>
+                <li class="dropdown-item"><a href="#">Алгебра и Анализ</a></li>
                 <li class="nav-divider"></li>
-                <li><b>ПРОГРАММИРОВАНИЕ</b></li>
-                <li><a href="#">Программирования на Python</a></li>
-                <li><a href="#">Библиотеки для Машинного Обучения</a></li>
-                <li><a href="#">Системы Контроля Версий</a></li>
-                <li><a href="#">Веб-Разработка</a></li>
+                <li class="text-muted"><h4>Программирование</h4></li>
+                <li class="dropdown-item"><a href="#">Программирования на Python</a></li>
+                <li class="dropdown-item"><a href="#">Библиотеки для Машинного Обучения</a></li>
+                <li class="dropdown-item"><a href="#">Системы Контроля Версий</a></li>
+                <li class="dropdown-item"><a href="#">Веб-Разработка</a></li>
                 <li class="nav-divider"></li>
-                <li><b>БАЗЫ ДАННЫХ</b></li>
-                <li><a href="#">Теория Баз Данных</a></li>
-                <li><a href="#">SQL</a></li>
-                <li><a href="#">Ипользование SQL в Python и Web</a></li>
+                <li class="text-muted"><h4>Базы Данных</h4></li>
+                <li class="dropdown-item"><a href="#">Теория Баз Данных</a></li>
+                <li class="dropdown-item"><a href="#">SQL</a></li>
+                <li class="dropdown-item"><a href="#">Ипользование SQL в Python и Web</a></li>
                 <li class="nav-divider"></li>
-                <li><b>АЛГОРИТМЫ И СТРУКТУРЫ ДАННЫХ</b></li>
-                <li><a href="#">Структуры Данных</a></li>
-                <li><a href="#">Алгоритмы</a></li>
+                <li class="text-muted"><h4>Алгоритмы и Структуры Данных</h4></li>
+                <li class="dropdown-item"><a href="#">Структуры Данных</a></li>
+                <li class="dropdown-item"><a href="#">Алгоритмы</a></li>
                 <li class="nav-divider"></li>
-                <li><b>МАШИННОЕ ОБУЧЕНИЕ</b></li>
-                <li><a href="#">Обучение на Размеченных Данных</a></li>
-                <li><a href="#">Обучение на Неразмеченных Данных</a></li>
-                <li><a href="#">Матричные Разложения</a></li>
-                <li><a href="#">Обработка Данных</a></li>
-                <li><a hreg="#">Настройка и Проверка Моделей</a></li>
+                <li class="text-muted"><h4>Машинное Обучение</h4></li>
+                <li class="dropdown-item"><a href="#">Обучение на Размеченных Данных</a></li>
+                <li class="dropdown-item"><a href="#">Обучение на Неразмеченных Данных</a></li>
+                <li class="dropdown-item"><a href="#">Матричные Разложения</a></li>
+                <li class="dropdown-item"><a href="#">Обработка Данных</a></li>
+                <li class="dropdown-item"><a hreg="#">Настройка и Проверка Моделей</a></li>
               </li>
               </ul>
             <li><a href="#"><b>Пайплайны</b></a></li>
@@ -66,21 +66,124 @@
     </nav>
     <div class="col-md-2">
     </div>
+
+    <div class="col-md-2">
+      <ul class="nav nav-tabs nav-stacked" id="nav">
+          <li><a href="#" class="sub" tabindex="1">Базовые Понятия</a>
+              <ul>
+                  <li><a href="#">Линейные операции над матрицами</a></li>
+                  <li><a href="#">Элементарные преобразования</a></li>
+                  <li><a href="#">Ранг и определитель матрицы</a></li>
+                  <li><a href="#">Свойства определителей</a></li>
+                  <li><a href="#">Умножение матриц</a></li>
+                  <li><a href="#">Обратная матрица</a></li>
+                  <li><a href="#">Линейная независимость</a></li>
+              </ul>
+          </li>
+          <li><a href="#" class="sub" tabindex="1">Системы Линейных Уравнений</a>
+              <ul>
+                  <li><a href="#">Методы решения СЛАУ</a></li>
+                  <li><a href="#">Однородные и неоднородные СЛАУ</a></li>
+              </ul>
+          </li>
+          <li><a href="#" class="sub" tabindex="1">Векторная Алгебра</a>
+              <ul>
+                  <li><a href="#">Базис и понятие вектора</a></li>
+                  <li><a href="#">Линейная зависимостьвекторов</a></li>
+                  <li><a href="#">Проекция вектора на ось</a></li>
+                  <li><a href="#">Скалярное произведение векторов</a></li>
+                  <li><a href="#">Векторное произведение векторов</a></li>
+                  <li><a href="#">Смешанное произведение векторов</a></li>
+              </ul>
+          </li>
+          <li><a href="#" class="sub" tabindex="1">Линейная Алгебра</a>
+              <ul>
+                  <li><a href="#">Скалирное произведение и угол</a></li>
+                  <li><a href="#">Переход к новому базису</a></li>
+                  <li><a href="#">Евклидово пространство</a></li>
+                  <li><a href="#">Линейные операторы и их матрицы</a></li>
+                  <li><a href="#">Действия с линейными операторами</a></li>
+                  <li><a href="#">Матрицы линейных операторов</a></li>
+                  <li><a href="#">Собственные числа и векторы</a></li>
+                  <li><a href="#">Квадратичные формы</a></li>
+              </ul>
+          </li>
+          <li><a href="#" class="sub" tabindex="1">Матричные Разложения</a>
+              <ul>
+                  <li><a href="#">Спектральное разложение</a></li>
+                  <li><a href="#">Сингулярной разложение</a></li>
+                  <li><a href="#">Пропущенные значения матрицы</a></li>
+                  <li><a href="#">Отсутствие негативных примеров</a></li>
+                  <li><a href="#">Обработка пропусков</a></li>
+              </ul>
+          </li>
+          <li><a href="#" class="sub" tabindex="1">Реализация на Python</a>
+              <ul>
+                  <li><a href="#">Умножение матрицы на число</a></li>
+                  <li><a href="#">Векторное умножение</a></li>
+                  <li><a href="#">Решение СЛАУ</a></li>
+                  <li><a href="#">Определение линейной зависимости</a></li>
+                  <li><a href="#">Матричные разложения</a></li>
+              </ul>
+          </li>
+      </ul>
+    </div>
+
+<!--
     <div class="col-md-2">
       <ul class="nav nav-tabs nav-stacked">
          <li></li>
          <br>
-         <li class="nav-header">Линейная алгебра</li>
-         <li><a href="#">Базис линейного пространства</a></li>
-         <li><a href="#">Векторы</a></li>
-         <li><a href="#">Матрицы</a></li>
+         <li class="nav-header">Базовые Понятия</li>
+         <li class="nav-item"><a href="#">Линейные операции над матрицами</a></li>
+         <li class="nav-item"><a href="#">Элементарные преобразования</a></li>
+         <li class="nav-item"><a href="#">Ранг и определитель матрицы</a></li>
+         <li class="nav-item"><a href="#">Свойства определителей</a></li>
+         <li class="nav-item"><a href="#">Умножение матриц</a></li>
+         <li class="nav-item"><a href="#">Обратная матрица</a></li>
+         <li class="nav-item"><a href="#">Линейная независимость</a></li>
          <li class="nav-divider"></li>
-         <li class="nav-header">Теория вероятностей</li>
-         <li><a href="#">Условная вероятность</a></li>
-         <li><a href="#">Теорема Байеса</a></li>
-         <li><a href="#">Полная вероятность</a></li>
+         <li class="nav-header">Системы Линейных Уравнений</li>
+         <li class="nav-item"><a href="#">Методы решения СЛАУ</a></li>
+         <li class="nav-item"><a href="#">Однородные и неоднородные СЛАУ</a></li>
+         <li class="nav-divider"></li>
+         <li class="nav-header">Векторная Алгебра</li>
+         <li class="nav-item"><a href="#">Базис и понятие вектора</a></li>
+         <li class="nav-item"><a href="#">Линейная зависимостьвекторов</a></li>
+         <li class="nav-item"><a href="#">Проекция вектора на ось</a></li>
+         <li class="nav-item"><a href="#">Скалярное произведение векторов</a></li>
+         <li class="nav-item"><a href="#">Векторное произведение векторов</a></li>
+         <li class="nav-item"><a href="#">Смешанное произведение векторов</a></li>
+         <li class="nav-divider"></li>
+         <li class="nav-header">Линейная Алгебра</li>
+         <li class="nav-item"><a href="#">Скалирное произведение и угол</a></li>
+         <li class="nav-item"><a href="#">Переход к новому базису</a></li>
+         <li class="nav-item"><a href="#">Евклидово пространство</a></li>
+         <li class="nav-item"><a href="#">Линейные операторы и их матрицы</a></li>
+         <li class="nav-item"><a href="#">Действия с линейными операторами</a></li>
+         <li class="nav-item"><a href="#">Матрицы линейных операторов</a></li>
+         <li class="nav-item"><a href="#">Собственные числа и векторы</a></li>
+         <li class="nav-item"><a href="#">Квадратичные формы</a></li>
+         <li class="nav-divider"></li>
+         <li class="nav-header">Матричные Разложения</li>
+         <li class="nav-item"><a href="#">Спектральное разложение</a></li>
+         <li class="nav-item"><a href="#">Сингулярное разложение</a></li>
+         <li class="nav-item"><a href="#">Пропущенные значения матрицы</a></li>
+         <li class="nav-item"><a href="#">Отсутствие негативных примеров</a></li>
+         <li class="nav-item"><a href="#">Обработка пропусков</a></li>
+         <li class="nav-divider"></li>
+         <li class="nav-header">Реализация на Python</li>
+         <li class="nav-item"><a href="#">Умножение матрицы на число</a></li>
+         <li class="nav-item"><a href="#">Векторное умножение</a></li>
+         <li class="nav-item"><a href="#">Решение СЛАУ</a></li>
+         <li class="nav-item"><a href="#">Определение линейной зависимости</a></li>
+         <li class="nav-item"><a href="#">Матричные разложения</a></li>
       </ul>
     </div>
+
+-->
+
+
 
     <div class="col-md-5 blogShort">
       <h1>Базовые понятия</h1>
